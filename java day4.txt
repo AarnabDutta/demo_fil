@@ -1,0 +1,71 @@
+hierarchy(collection framework):
+1.Iterable Interface
+2.Collection Interface
+
+List:
+1.ArrayList
+2.Vector
+3.Stack
+4.LinkedList
+
+Queue:
+1.Priority Queue
+2.Dequeue
+3.ArrayQueue
+
+Set:
+1.HashSet
+2.LinkedHashSet
+3.TreeSet
+4.Sorted Set
+
+Java always communicate with transport layer
+
+
+JDBC
+Step1: Register the driver. Specify the database: class.forName("com.mysql.jdbc.Driver") // class is a builtin class in java.lang package, forName is the method to register the class and it throws an exception called ClassNotFoundexception.
+Step2: Specify the URL or the location of the database. 
+Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/DBName", "root", "pwd");
+//connection - interface of java.sql package
+//getConnection - it throws an exception called SQLException
+//jdbc - protocol
+//localhost - server name where the MySQL database is working on.
+//3306 is the port no. 
+//root - username
+//pwd - password
+
+MySQL:
+class.forName("com.mysql.jdbc.Driver");
+connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/DBName", "root", "pwd");
+
+ORACLE:
+Class.forName("jdbc.oracle.driver.OracleDriver");
+Connection conn=driverManager.getConnection("jdbc:oracle:thin@localhost:1521/XE", "root", "pwd");
+
+Step3: Open the connection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
